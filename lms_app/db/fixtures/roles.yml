@@ -1,0 +1,38 @@
+# == Schema Information
+#
+# Table name: roles
+#
+#  id                      :integer         not null, primary key
+#  title                   :string(255)     indexed
+#  view_books              :boolean         default(TRUE), not null
+#  create_books            :boolean         default(FALSE), not null
+#  edit_books              :boolean         default(FALSE), not null
+#  delete_books            :boolean         default(FALSE), not null
+#  manage_roles            :boolean         default(FALSE), not null
+
+# Indexes
+#  index_roles_on_title                  (title) UNIQUE
+
+librarian:
+  title: 'admin'
+  view_books: true
+  create_books: true
+  edit_books: true
+  delete_books: true
+  manage_roles: true
+
+staff:
+  title: 'staff'
+  view_books: true
+  create_books: false
+  edit_books: true
+  delete_books: false
+  manage_roles: false
+
+member:
+  title: 'member'
+  view_books: true
+  create_books: false
+  edit_books: false
+  delete_books: false
+  manage_roles: false

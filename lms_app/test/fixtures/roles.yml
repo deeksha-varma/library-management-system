@@ -1,0 +1,23 @@
+librarian:
+  title: 'admin'
+  view_books: true
+  create_books: true
+  edit_books: true
+  delete_books: true
+  manage_roles: true
+
+staff:
+  title: 'staff'
+  view_books: true
+  create_books: false
+  edit_books: true
+  delete_books: false
+  manage_roles: false
+
+member:
+  title: 'member'
+  view_books: true
+  create_books: false
+  edit_books: false
+  delete_books: false
+  manage_roles: false

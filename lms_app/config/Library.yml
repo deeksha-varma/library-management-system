@@ -1,0 +1,3 @@
+common:
+  library_admin_email: "admin@reportbee.net"
+  default_password: "reportbee"
